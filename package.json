@@ -1,0 +1,15 @@
+{
+  "name": "csgo-item-name-parser",
+  "version": "1.0.0",
+  "description": "Read item's weapon, skin and wear from item name",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "keywords": ["steam", "csgo", "item", "name", "parser", "wear", "skin", "weapon"],
+  "author": "Arkadiusz Sygulski <arkadiusz@sygulski.pl> (https://sygulski.pl/)",
+  "license": "MIT",
+  "devDependencies": {
+    "ava": "^0.24.0"
+  }
+}

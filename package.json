@@ -6,7 +6,16 @@
   "scripts": {
     "test": "ava"
   },
-  "keywords": ["steam", "csgo", "item", "name", "parser", "wear", "skin", "weapon"],
+  "keywords": [
+    "steam",
+    "csgo",
+    "item",
+    "name",
+    "parser",
+    "wear",
+    "skin",
+    "weapon"
+  ],
   "author": "Arkadiusz Sygulski <arkadiusz@sygulski.pl> (https://sygulski.pl/)",
   "license": "MIT",
   "devDependencies": {

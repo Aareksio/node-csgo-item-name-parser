@@ -1,6 +1,6 @@
 {
   "name": "csgo-item-name-parser",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Read item's weapon, skin and wear from item name",
   "main": "index.js",
   "scripts": {

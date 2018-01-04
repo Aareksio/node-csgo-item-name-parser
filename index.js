@@ -1,4 +1,4 @@
-const replaceRegex = new RegExp('Case Key|Case|Souvenir Package');
+const replaceRegex = new RegExp('(?:Case Key|Case|Souvenir Package)$');
 
 function parseName(name) {
   const itemData = {

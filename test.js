@@ -57,3 +57,9 @@ test('Souvenir', t => {
   t.is(itemData.weapon, 'PP-Bizon');
   t.true(itemData.souvenir);
 });
+
+test('No wear', t => {
+  const itemData = parseName('Item | Skin');
+  t.is(itemData.weapon, 'Item');
+  t.is(itemData.skin, 'Skin');
+});

@@ -41,8 +41,12 @@ function parseName(name) {
       const wearStart = nameParts[1].lastIndexOf('(');
       const wearEnd = nameParts[1].lastIndexOf(')');
 
-      itemData.skin = `${nameParts[1].slice(0, wearStart - 1)}${nameParts[1].slice(wearEnd + 1)}`;
-      itemData.wear = nameParts[1].slice(wearStart + 1, wearEnd);
+      if (wearStart !== -1 && wearEnd !== -1) {
+        itemData.skin = `${nameParts[1].slice(0, wearStart - 1)}${nameParts[1].slice(wearEnd + 1)}`;
+        itemData.wear = nameParts[1].slice(wearStart + 1, wearEnd);
+      } else {
+        itemData.skin = nameParts[1];
+      }
       break;
     default:
       itemData.weapon = nameParts[0];

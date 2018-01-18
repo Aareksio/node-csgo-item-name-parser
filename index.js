@@ -33,7 +33,7 @@ function parseName(name) {
   switch (nameParts.length) {
     case 3:
       itemData.weapon = nameParts[0];
-      itemData.skin = nameParts[1] + ' | ' + nameParts[2];
+      itemData.skin = `${nameParts[1]} | ${nameParts[2]}`;
       break;
     case 2:
       itemData.weapon = nameParts[0];

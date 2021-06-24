@@ -63,3 +63,9 @@ test('No wear', t => {
   t.is(itemData.weapon, 'Item');
   t.is(itemData.skin, 'Skin');
 });
+
+test('Graffiti', t => {
+  const itemData = parseName('Sealed Graffiti | Little Bock (Battle Green)')
+  t.is(itemData.weapon, 'Sealed Graffiti')
+  t.is(itemData.skin, 'Little Bock (Battle Green)')
+})

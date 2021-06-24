@@ -1,4 +1,5 @@
 const replaceRegex = new RegExp('(?:Case Key|Case|Souvenir Package)$');
+const graffitiRegex = new RegExp('^(Sealed Graffiti)')
 
 function parseName(name) {
   const itemData = {
@@ -14,6 +15,11 @@ function parseName(name) {
     itemData.weapon = match;
     itemData.skin = `${name.slice(0, index - 1)}${name.slice(index + name.length)}`;
   });
+
+  name.replace(graffitiRegex, match => {
+    itemData.weapon = match;
+    itemData.skin = name.slice(match.length + 3);
+  })
 
   if (itemData.skin) return itemData;
 

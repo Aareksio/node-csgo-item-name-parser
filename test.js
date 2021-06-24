@@ -65,7 +65,13 @@ test('No wear', t => {
 });
 
 test('Graffiti', t => {
-  const itemData = parseName('Sealed Graffiti | Little Bock (Battle Green)')
+  const itemData = parseName('Sealed Graffiti | Little Bock (Battle Green)');
+  t.is(itemData.weapon, 'Sealed Graffiti');
+  t.is(itemData.skin, 'Little Bock (Battle Green)');
+})
+
+test('Graffiti 3 part', t => {
+  const itemData = parseName('Sealed Graffiti | Virtus.Pro | London 2018');
   t.is(itemData.weapon, 'Sealed Graffiti')
-  t.is(itemData.skin, 'Little Bock (Battle Green)')
+  t.is(itemData.skin, 'Virtus.Pro | London 2018')
 })

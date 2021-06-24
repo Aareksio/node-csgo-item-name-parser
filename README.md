@@ -3,6 +3,12 @@
 
 ![](./docs/code-example.png)
 
+## Changelog
+```
+## 1.2.0
+- Handle Sealed Graffiti
+```
+
 ## License
 
 [MIT](./LICENSE)

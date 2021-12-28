@@ -8,7 +8,8 @@ function parseName(name) {
     skin: null,
     wear: null,
     statTrak: false,
-    souvenir: false
+    souvenir: false,
+    knife: false
   };
 
   name.replace(replaceRegex, (match, index, name) => {
@@ -58,6 +59,8 @@ function parseName(name) {
       itemData.weapon = nameParts[0];
       break;
   }
+
+  if (/(knife|karambit|bayonet|shadow daggers)/.test(itemData.weapon.toLowerCase())) itemData.knife = true;
 
   return itemData;
 }

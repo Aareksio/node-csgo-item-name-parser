@@ -4,6 +4,7 @@ const test = require('ava');
 test('1 part name', t => {
   const itemData = parseName('★ Gut Knife');
   t.is(itemData.weapon, '★ Gut Knife');
+  t.true(itemData.knife);
 });
 
 test('2 part name', t => {
@@ -26,6 +27,7 @@ test('Non english name', t => {
   t.is(itemData.weapon, 'M4A4');
   t.is(itemData.skin, '龍王 (Dragon King)');
   t.is(itemData.wear, 'Well-Worn');
+  t.false(itemData.knife);
 });
 
 test('Case Key', t => {
@@ -68,6 +70,7 @@ test('Graffiti', t => {
   const itemData = parseName('Sealed Graffiti | Little Bock (Battle Green)');
   t.is(itemData.weapon, 'Sealed Graffiti');
   t.is(itemData.skin, 'Little Bock (Battle Green)');
+  t.false(itemData.knife);
 })
 
 test('Graffiti 3 part', t => {

@@ -19,6 +19,6 @@
   "author": "Arkadiusz Sygulski <arkadiusz@sygulski.pl> (https://sygulski.pl/)",
   "license": "MIT",
   "devDependencies": {
-    "ava": "^0.24.0"
+    "ava": "^5.1.0"
   }
 }
